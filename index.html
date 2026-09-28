@@ -1,118 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Personal portfolio website of Your Name, a web developer showcasing skills and projects.">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="author" content="Your Name">
-    <meta name="robots" content="index, follow">
+    <meta
+        name="description"
+        content="Kaavya - Web Developer Portfolio"
+    >
 
-    <title>
-        Kaavya | Web Developer Portfolio</title>
+    <meta
+        name="author"
+        content="Kaavya"
+    >
+
+    <title>Kaavya | Web Developer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+    <!-- ================= HEADER ================= -->
 
-    <!-- Skip Navigation -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
+    <header>
 
-    <!-- Header -->
-    <header role="banner">
+        <div class="container nav-container">
 
-        <div class="container">
-
-            <a href="index.html" class="logo">
-              Kaavya
+            <a href="#home" class="logo">
+                Kaavya<span>.</span>
             </a>
 
-            <!-- Navigation -->
+
             <nav aria-label="Primary navigation">
+
                 <ul>
+
                     <li>
-                        <a href="index.html" aria-current="page">
+                        <a
+                            href="#home"
+                            aria-current="page"
+                        >
                             Home
                         </a>
                     </li>
 
                     <li>
-                        <a href="about.html">
+                        <a href="#about">
                             About
                         </a>
                     </li>
 
                     <li>
-                        <a href="projects.html">
+                        <a href="#skills">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">
                             Projects
                         </a>
                     </li>
 
                     <li>
-                        <a href="contact.html">
+                        <a href="#contact">
                             Contact
                         </a>
                     </li>
+
                 </ul>
+
             </nav>
 
         </div>
 
     </header>
 
-    <!-- Main Content -->
+
+
+    <!-- ================= MAIN ================= -->
+
     <main id="main-content">
 
-        <!-- Hero Section -->
-        <section aria-labelledby="hero-title">
 
-            <div class="container">
+        <!-- ================= HERO ================= -->
 
-                <p>Web Developer</p>
+        <section
+            id="home"
+            class="hero"
+            aria-labelledby="hero-title"
+        >
 
-                <h1 id="hero-title">
-                    Hi, I'm Kaavya
-                </h1>
+            <div class="container hero-grid">
 
-                <p>
-                    I create accessible, responsive and
-                    user-friendly websites using modern
-                    web technologies.
-                </p>
+                <div class="hero-content">
 
-                <a href="projects.html">
-                    View My Projects
-                </a>
+                    <p class="eyebrow">
+                        Web Developer
+                    </p>
 
-                <a href="contact.html">
-                    Contact Me
-                </a>
+                    <h1 id="hero-title">
+                        Hi, I'm
+                        <span>Kaavya</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I create accessible, responsive
+                        and user-friendly websites using
+                        modern web technologies.
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+                            View My Projects
+                        </a>
+
+                        <a
+                            href="#contact"
+                            class="btn btn-secondary"
+                        >
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+
+                    <p class="eyebrow">
+                        My Focus
+                    </p>
+
+                    <h2>
+                        Clean Code.
+                        Thoughtful Design.
+                    </h2>
+
+                    <p>
+                        I focus on semantic HTML,
+                        modern CSS, responsive layouts
+                        and accessible user experiences.
+                    </p>
+
+                </div>
 
             </div>
 
         </section>
 
-        <!-- Skills Section -->
-        <section aria-labelledby="skills-title">
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section
+            id="about"
+            class="section"
+            aria-labelledby="about-title"
+        >
 
             <div class="container">
 
-                <h2 id="skills-title">
-                    My Skills
-                </h2>
+                <div class="section-heading">
 
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>Responsive Web Design</li>
-                    <li>Web Accessibility</li>
-                </ul>
+                    <p class="eyebrow">
+                        About Me
+                    </p>
+
+                    <h2 id="about-title">
+                        Building for people,
+                        not just screens.
+                    </h2>
+
+                    <p>
+                        I am a passionate web developer
+                        interested in creating modern,
+                        accessible and responsive websites.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+
+                    <article class="card">
+
+                        <h3>
+                            Frontend Developer
+                        </h3>
+
+                        <p>
+                            I develop responsive websites
+                            using HTML, CSS and JavaScript.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>
+                            Web Accessibility
+                        </h3>
+
+                        <p>
+                            I build websites using semantic
+                            HTML and accessibility best
+                            practices.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>
+                            Education
+                        </h3>
+
+                        <p>
+                            Bachelor's Degree in Computer
+                            Science / Information Technology.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section
+            id="skills"
+            class="section skills-section"
+            aria-labelledby="skills-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        My Toolkit
+                    </p>
+
+                    <h2 id="skills-title">
+                        My Skills
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <span>01</span>
+                        <h3>HTML5</h3>
+                        <p>
+                            Semantic and accessible
+                            HTML structure.
+                        </p>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <span>02</span>
+                        <h3>CSS3</h3>
+                        <p>
+                            Modern layouts using
+                            Grid and Flexbox.
+                        </p>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <span>03</span>
+                        <h3>JavaScript</h3>
+                        <p>
+                            Interactive and dynamic
+                            web experiences.
+                        </p>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <span>04</span>
+                        <h3>Responsive Design</h3>
+                        <p>
+                            Mobile-first layouts for
+                            every screen size.
+                        </p>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <span>05</span>
+                        <h3>Accessibility</h3>
+                        <p>
+                            Inclusive websites for
+                            all users.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section
+            id="projects"
+            class="section"
+            aria-labelledby="projects-title"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        My Work
+                    </p>
+
+                    <h2 id="projects-title">
+                        Selected Projects
+                    </h2>
+
+                    <p>
+                        Some projects that demonstrate
+                        my web development skills.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Portfolio Website
+                        </h3>
+
+                        <p>
+                            An accessible personal portfolio
+                            website created using semantic
+                            HTML5 and modern CSS3.
+                        </p>
+
+                        <a href="#contact">
+                            View Project →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Task Management App
+                        </h3>
+
+                        <p>
+                            A simple task management
+                            application designed for
+                            usability and accessibility.
+                        </p>
+
+                        <a href="#contact">
+                            View Project →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section
+            id="contact"
+            class="section contact-section"
+            aria-labelledby="contact-title"
+        >
+
+            <div class="container contact-grid">
+
+
+                <div class="contact-text">
+
+                    <p class="eyebrow">
+                        Let's Connect
+                    </p>
+
+                    <h2 id="contact-title">
+                        Have a project
+                        in mind?
+                    </h2>
+
+                    <p>
+                        Fill out the form and let's
+                        talk about building something
+                        useful and beautiful.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <form
+                        action="#"
+                        method="post"
+                    >
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
 
             </div>
 
@@ -120,13 +533,21 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer role="contentinfo">
 
-        <div class="container">
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
 
             <p>
-                &copy; 2026 Your Name. All rights reserved.
+                © 2026 Kaavya.
+                All rights reserved.
+            </p>
+
+            <p>
+                Built with HTML5 & CSS3.
             </p>
 
         </div>
@@ -134,4 +555,6 @@
     </footer>
 
 </body>
+
 </html>
+```

@@ -1,159 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Kaavya - Web Developer Portfolio"
+        content="Kaavya G - Frontend Developer and UI-focused web developer portfolio."
     >
 
-    <meta
-        name="author"
-        content="Kaavya"
-    >
+    <meta name="author" content="Kaavya G">
 
-    <title>Kaavya | Web Developer</title>
+    <title>Kaavya G | Frontend Developer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-    <!-- ================= HEADER ================= -->
 
-    <header>
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
 
         <div class="container nav-container">
 
             <a href="#home" class="logo">
-                Kaavya<span>.</span>
+                KAAVYA<span>.</span>
             </a>
 
-
-            <nav aria-label="Primary navigation">
-
+            <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
-
-                    <li>
-                        <a
-                            href="#home"
-                            aria-current="page"
-                        >
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#about">
-                            About
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#skills">
-                            Skills
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#projects">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">
-                            Contact
-                        </a>
-                    </li>
-
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-
             </nav>
+
+            <div class="theme-switch">
+
+                <input
+                    type="checkbox"
+                    id="theme-toggle"
+                    class="theme-toggle"
+                >
+
+                <label
+                    for="theme-toggle"
+                    class="theme-label"
+                    aria-label="Toggle dark mode"
+                >
+                    <span class="sun">☀</span>
+                    <span class="moon">☾</span>
+                </label>
+
+            </div>
 
         </div>
 
     </header>
 
 
+    <main>
 
-    <!-- ================= MAIN ================= -->
+        <!-- =========================
+             HERO
+        ========================== -->
 
-    <main id="main-content">
-
-
-        <!-- ================= HERO ================= -->
-
-        <section
-            id="home"
-            class="hero"
-            aria-labelledby="hero-title"
-        >
+        <section class="hero" id="home">
 
             <div class="container hero-grid">
 
                 <div class="hero-content">
 
-                    <p class="eyebrow">
-                        Web Developer
+                    <p class="hero-eyebrow">
+                        FRONTEND DEVELOPER
                     </p>
 
-                    <h1 id="hero-title">
-                        Hi, I'm
-                        <span>Kaavya</span>
+                    <h1>
+                        I build digital
+                        <span>experiences</span>
+                        that feel effortless.
                     </h1>
 
                     <p class="hero-description">
-                        I create accessible, responsive
-                        and user-friendly websites using
-                        modern web technologies.
+                        I'm Kaavya G, a frontend-focused developer passionate
+                        about creating clean, responsive and user-friendly
+                        websites with thoughtful design and modern web
+                        technologies.
                     </p>
 
+                    <div class="hero-actions">
 
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#projects"
-                            class="btn btn-primary"
-                        >
-                            View My Projects
+                        <a href="#work" class="btn btn-primary">
+                            View My Work
+                            <span>↗</span>
                         </a>
 
-                        <a
-                            href="#contact"
-                            class="btn btn-secondary"
-                        >
-                            Contact Me
+                        <a href="#contact" class="btn btn-outline">
+                            Let's Connect
                         </a>
+
+                    </div>
+
+                    <div class="hero-meta">
+
+                        <div>
+                            <span class="meta-dot"></span>
+                            Available for opportunities
+                        </div>
+
+                        <div>
+                            Chennai · India
+                        </div>
 
                     </div>
 
                 </div>
 
 
-                <div class="hero-card">
+                <div class="hero-visual">
 
-                    <p class="eyebrow">
-                        My Focus
-                    </p>
+                    <div class="hero-card">
+
+                        <div class="card-top">
+
+                            <span class="window-dot"></span>
+                            <span class="window-dot"></span>
+                            <span class="window-dot"></span>
+
+                        </div>
+
+                        <div class="code-area">
+
+                            <span class="code-line muted">
+                                &lt;developer&gt;
+                            </span>
+
+                            <span class="code-line">
+                                <b>const</b>
+                                name =
+                                <em>"Kaavya G"</em>;
+                            </span>
+
+                            <span class="code-line">
+                                <b>const</b>
+                                focus =
+                                <em>"Web Development"</em>;
+                            </span>
+
+                            <span class="code-line">
+                                <b>const</b>
+                                mindset =
+                                <em>"Build. Learn. Improve."</em>;
+                            </span>
+
+                            <span class="code-line muted">
+                                &lt;/developer&gt;
+                            </span>
+
+                        </div>
+
+                        <div class="hero-card-footer">
+
+                            <div>
+                                <strong>01</strong>
+                                <span>Clean UI</span>
+                            </div>
+
+                            <div>
+                                <strong>02</strong>
+                                <span>Responsive</span>
+                            </div>
+
+                            <div>
+                                <strong>03</strong>
+                                <span>Accessible</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-badge badge-one">
+                        <span>✦</span>
+                        Creative Thinking
+                    </div>
+
+                    <div class="floating-badge badge-two">
+                        <span>✓</span>
+                        Pixel Focused
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="about section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-number">01 — ABOUT</p>
 
                     <h2>
-                        Clean Code.
-                        Thoughtful Design.
+                        Turning ideas into
+                        <span>digital reality.</span>
                     </h2>
 
                     <p>
-                        I focus on semantic HTML,
-                        modern CSS, responsive layouts
-                        and accessible user experiences.
+                        I enjoy transforming ideas into polished digital
+                        interfaces that are simple to understand, pleasant
+                        to use and built with attention to detail.
                     </p>
+
+                </div>
+
+
+                <div class="about-layout">
+
+                    <div class="about-main">
+
+                        <p>
+                            My approach to development combines clean
+                            structure, responsive layouts and purposeful
+                            visual design. I believe a good website should
+                            not only look impressive, but also provide a
+                            smooth experience across every screen size.
+                        </p>
+
+                        <p>
+                            I'm continuously improving my skills in modern
+                            frontend development, exploring better ways to
+                            write maintainable code and create interfaces
+                            that balance aesthetics with usability.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            Start a conversation
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="about-highlights">
+
+                        <article class="highlight-card">
+
+                            <span class="highlight-number">01</span>
+
+                            <div>
+                                <h3>Design Mindset</h3>
+                                <p>
+                                    Clean visual hierarchy with thoughtful
+                                    spacing, typography and interaction.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="highlight-card">
+
+                            <span class="highlight-number">02</span>
+
+                            <div>
+                                <h3>Development</h3>
+                                <p>
+                                    Structured, responsive and maintainable
+                                    frontend code.
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="highlight-card">
+
+                            <span class="highlight-number">03</span>
+
+                            <div>
+                                <h3>Continuous Learning</h3>
+                                <p>
+                                    Always learning new technologies and
+                                    improving development practices.
+                                </p>
+                            </div>
+
+                        </article>
+
+                    </div>
 
                 </div>
 
@@ -162,108 +310,21 @@
         </section>
 
 
+        <!-- =========================
+             SKILLS
+        ========================== -->
 
-        <!-- ================= ABOUT ================= -->
-
-        <section
-            id="about"
-            class="section"
-            aria-labelledby="about-title"
-        >
+        <section class="skills section" id="skills">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-heading centered">
 
-                    <p class="eyebrow">
-                        About Me
-                    </p>
+                    <p class="section-number">02 — EXPERTISE</p>
 
-                    <h2 id="about-title">
-                        Building for people,
-                        not just screens.
-                    </h2>
-
-                    <p>
-                        I am a passionate web developer
-                        interested in creating modern,
-                        accessible and responsive websites.
-                    </p>
-
-                </div>
-
-
-                <div class="about-grid">
-
-
-                    <article class="card">
-
-                        <h3>
-                            Frontend Developer
-                        </h3>
-
-                        <p>
-                            I develop responsive websites
-                            using HTML, CSS and JavaScript.
-                        </p>
-
-                    </article>
-
-
-                    <article class="card">
-
-                        <h3>
-                            Web Accessibility
-                        </h3>
-
-                        <p>
-                            I build websites using semantic
-                            HTML and accessibility best
-                            practices.
-                        </p>
-
-                    </article>
-
-
-                    <article class="card">
-
-                        <h3>
-                            Education
-                        </h3>
-
-                        <p>
-                            Bachelor's Degree in Computer
-                            Science / Information Technology.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section
-            id="skills"
-            class="section skills-section"
-            aria-labelledby="skills-title"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        My Toolkit
-                    </p>
-
-                    <h2 id="skills-title">
-                        My Skills
+                    <h2>
+                        Tools I use to bring
+                        <span>ideas to life.</span>
                     </h2>
 
                 </div>
@@ -271,54 +332,124 @@
 
                 <div class="skills-grid">
 
-                    <div class="skill-card">
-                        <span>01</span>
-                        <h3>HTML5</h3>
-                        <p>
-                            Semantic and accessible
-                            HTML structure.
-                        </p>
-                    </div>
+                    <article class="skill-card featured-skill">
+
+                        <div class="skill-icon">
+                            HTML
+                        </div>
+
+                        <div>
+                            <h3>HTML5</h3>
+
+                            <p>
+                                Semantic and accessible structure for
+                                scalable web experiences.
+                            </p>
+                        </div>
+
+                        <span class="skill-index">01</span>
+
+                    </article>
 
 
-                    <div class="skill-card">
-                        <span>02</span>
-                        <h3>CSS3</h3>
-                        <p>
-                            Modern layouts using
-                            Grid and Flexbox.
-                        </p>
-                    </div>
+                    <article class="skill-card">
+
+                        <div class="skill-icon">
+                            CSS
+                        </div>
+
+                        <div>
+                            <h3>CSS3</h3>
+
+                            <p>
+                                Modern layouts, animations, responsive
+                                design and visual systems.
+                            </p>
+                        </div>
+
+                        <span class="skill-index">02</span>
+
+                    </article>
 
 
-                    <div class="skill-card">
-                        <span>03</span>
-                        <h3>JavaScript</h3>
-                        <p>
-                            Interactive and dynamic
-                            web experiences.
-                        </p>
-                    </div>
+                    <article class="skill-card">
+
+                        <div class="skill-icon">
+                            JS
+                        </div>
+
+                        <div>
+                            <h3>JavaScript</h3>
+
+                            <p>
+                                Interactive interfaces and dynamic
+                                frontend functionality.
+                            </p>
+                        </div>
+
+                        <span class="skill-index">03</span>
+
+                    </article>
 
 
-                    <div class="skill-card">
-                        <span>04</span>
-                        <h3>Responsive Design</h3>
-                        <p>
-                            Mobile-first layouts for
-                            every screen size.
-                        </p>
-                    </div>
+                    <article class="skill-card">
+
+                        <div class="skill-icon">
+                            UI
+                        </div>
+
+                        <div>
+                            <h3>UI Design</h3>
+
+                            <p>
+                                User-focused interfaces with strong
+                                hierarchy and consistent styling.
+                            </p>
+                        </div>
+
+                        <span class="skill-index">04</span>
+
+                    </article>
 
 
-                    <div class="skill-card">
-                        <span>05</span>
-                        <h3>Accessibility</h3>
-                        <p>
-                            Inclusive websites for
-                            all users.
-                        </p>
-                    </div>
+                    <article class="skill-card">
+
+                        <div class="skill-icon">
+                            API
+                        </div>
+
+                        <div>
+                            <h3>REST APIs</h3>
+
+                            <p>
+                                Working with external data and building
+                                API-driven web experiences.
+                            </p>
+                        </div>
+
+                        <span class="skill-index">05</span>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">
+                            RWD
+                        </div>
+
+                        <div>
+                            <h3>Responsive Web</h3>
+
+                            <p>
+                                Interfaces designed to work beautifully
+                                across desktop, tablet and mobile.
+                            </p>
+                        </div>
+
+                        <span class="skill-index">06</span>
+
+                    </article>
 
                 </div>
 
@@ -327,30 +458,31 @@
         </section>
 
 
+        <!-- =========================
+             WORK
+        ========================== -->
 
-        <!-- ================= PROJECTS ================= -->
-
-        <section
-            id="projects"
-            class="section"
-            aria-labelledby="projects-title"
-        >
+        <section class="work section" id="work">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-heading work-heading">
 
-                    <p class="eyebrow">
-                        My Work
-                    </p>
+                    <div>
 
-                    <h2 id="projects-title">
-                        Selected Projects
-                    </h2>
+                        <p class="section-number">03 — SELECTED WORK</p>
+
+                        <h2>
+                            Projects built with
+                            <span>purpose.</span>
+                        </h2>
+
+                    </div>
 
                     <p>
-                        Some projects that demonstrate
-                        my web development skills.
+                        A selection of concepts and practical projects
+                        focused on usability, responsiveness and modern
+                        frontend development.
                     </p>
 
                 </div>
@@ -358,49 +490,153 @@
 
                 <div class="projects-grid">
 
+                    <article class="project-card project-large">
 
-                    <article class="project-card">
+                        <div class="project-visual visual-purple">
 
-                        <div class="project-number">
-                            01
+                            <div class="mock-window">
+
+                                <div class="mock-header">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="mock-content">
+
+                                    <div class="mock-sidebar"></div>
+
+                                    <div class="mock-lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <h3>
-                            Portfolio Website
-                        </h3>
+                        <div class="project-info">
 
-                        <p>
-                            An accessible personal portfolio
-                            website created using semantic
-                            HTML5 and modern CSS3.
-                        </p>
+                            <p class="project-type">
+                                FRONTEND · 01
+                            </p>
 
-                        <a href="#contact">
-                            View Project →
-                        </a>
+                            <h3>
+                                Personal Portfolio
+                            </h3>
+
+                            <p>
+                                A responsive personal portfolio designed
+                                to present skills, projects and professional
+                                identity through a clean visual system.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Responsive</span>
+                            </div>
+
+                        </div>
 
                     </article>
 
 
                     <article class="project-card">
 
-                        <div class="project-number">
-                            02
+                        <div class="project-visual visual-dark">
+
+                            <div class="task-ui">
+
+                                <div class="task-title"></div>
+
+                                <div class="task-row">
+                                    <i></i>
+                                    <span></span>
+                                </div>
+
+                                <div class="task-row">
+                                    <i></i>
+                                    <span></span>
+                                </div>
+
+                                <div class="task-row">
+                                    <i></i>
+                                    <span></span>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <h3>
-                            Task Management App
-                        </h3>
+                        <div class="project-info">
 
-                        <p>
-                            A simple task management
-                            application designed for
-                            usability and accessibility.
-                        </p>
+                            <p class="project-type">
+                                JAVASCRIPT · 02
+                            </p>
 
-                        <a href="#contact">
-                            View Project →
-                        </a>
+                            <h3>
+                                Task Management App
+                            </h3>
+
+                            <p>
+                                A focused task management concept with
+                                interactive controls and a simple workflow.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>DOM</span>
+                                <span>Local Storage</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-visual visual-light">
+
+                            <div class="weather-ui">
+
+                                <span class="weather-sun">☀</span>
+
+                                <strong>28°</strong>
+
+                                <small>Clear Sky</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <p class="project-type">
+                                API · 03
+                            </p>
+
+                            <h3>
+                                Weather Dashboard
+                            </h3>
+
+                            <p>
+                                A weather dashboard concept using API-driven
+                                data with a clear and responsive interface.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Fetch API</span>
+                                <span>Async JS</span>
+                                <span>REST</span>
+                            </div>
+
+                        </div>
 
                     </article>
 
@@ -411,75 +647,173 @@
         </section>
 
 
+        <!-- =========================
+             APPROACH
+        ========================== -->
 
-        <!-- ================= CONTACT ================= -->
+        <section class="approach section">
 
-        <section
-            id="contact"
-            class="section contact-section"
-            aria-labelledby="contact-title"
-        >
+            <div class="container">
 
-            <div class="container contact-grid">
+                <div class="approach-box">
 
+                    <div class="approach-intro">
 
-                <div class="contact-text">
+                        <p class="section-number">
+                            04 — MY APPROACH
+                        </p>
 
-                    <p class="eyebrow">
-                        Let's Connect
-                    </p>
+                        <h2>
+                            Simple process.
+                            <span>Strong results.</span>
+                        </h2>
 
-                    <h2 id="contact-title">
-                        Have a project
-                        in mind?
-                    </h2>
-
-                    <p>
-                        Fill out the form and let's
-                        talk about building something
-                        useful and beautiful.
-                    </p>
-
-                </div>
+                    </div>
 
 
-                <div class="contact-card">
+                    <div class="process-grid">
 
-                    <form
-                        action="#"
-                        method="post"
-                    >
+                        <div class="process-item">
 
-                        <div class="form-group">
+                            <span>01</span>
 
-                            <label for="name">
-                                Name
-                            </label>
+                            <h3>Discover</h3>
 
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                autocomplete="name"
-                                required
-                            >
+                            <p>
+                                Understand the goal, audience and purpose
+                                behind the project.
+                            </p>
 
                         </div>
 
 
-                        <div class="form-group">
+                        <div class="process-item">
 
-                            <label for="email">
-                                Email
-                            </label>
+                            <span>02</span>
 
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                autocomplete="email"
-                                required
-                            >
+                            <h3>Design</h3>
+
+                            <p>
+                                Create a clear visual direction with
+                                hierarchy and usability in mind.
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-item">
+
+                            <span>03</span>
+
+                            <h3>Develop</h3>
+
+                            <p>
+                                Build responsive interfaces using clean
+                                and maintainable code.
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-item">
+
+                            <span>04</span>
+
+                            <h3>Refine</h3>
+
+                            <p>
+                                Test, polish and improve the experience
+                                across different devices.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <div class="contact-content">
+
+                        <p class="section-number">
+                            05 — CONTACT
+                        </p>
+
+                        <h2>
+                            Let's create something
+                            <span>meaningful.</span>
+                        </h2>
+
+                        <p>
+                            Have a project, opportunity or idea you'd like
+                            to discuss? I'd love to hear about it.
+                        </p>
+
+                        <div class="contact-links">
+
+                            <a href="mailto:kaavya@example.com">
+                                <span>Email</span>
+                                kaavya@example.com
+                            </a>
+
+                            <a href="#home">
+                                <span>Location</span>
+                                Chennai, India
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your name"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                >
+
+                            </div>
 
                         </div>
 
@@ -494,7 +828,7 @@
                                 type="text"
                                 id="subject"
                                 name="subject"
-                                required
+                                placeholder="What would you like to discuss?"
                             >
 
                         </div>
@@ -509,8 +843,7 @@
                             <textarea
                                 id="message"
                                 name="message"
-                                rows="6"
-                                required
+                                placeholder="Tell me a little about your idea..."
                             ></textarea>
 
                         </div>
@@ -518,9 +851,10 @@
 
                         <button
                             type="submit"
-                            class="btn btn-primary"
+                            class="btn btn-primary submit-btn"
                         >
                             Send Message
+                            <span>↗</span>
                         </button>
 
                     </form>
@@ -534,20 +868,24 @@
     </main>
 
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
 
-    <footer>
+        <div class="container footer-container">
 
-        <div class="container footer-content">
+            <a href="#home" class="footer-logo">
+                KAAVYA<span>.</span>
+            </a>
 
             <p>
-                © 2026 Kaavya.
-                All rights reserved.
+                Designed & developed by Kaavya G
             </p>
 
             <p>
-                Built with HTML5 & CSS3.
+                © 2026 All rights reserved.
             </p>
 
         </div>
@@ -555,6 +893,4 @@
     </footer>
 
 </body>
-
 </html>
-```
